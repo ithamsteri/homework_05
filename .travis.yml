@@ -1,0 +1,22 @@
+dist: trusty
+sudo: required
+language: cpp
+compiler: clang
+
+before_script:
+- sudo apt-get update -qq
+
+script:
+- sudo apt-get install -y -qq graphviz doxygen
+- cmake -DCMAKE_BUILD_TYPE=Release .
+- cmake --build .
+- cmake --build . --target package
+- doxygen Doxyfile
+deploy:
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep-history: true
+    local-dir: html
+    on:
+      branch: master
