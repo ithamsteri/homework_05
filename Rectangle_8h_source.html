@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Prototype: Исходный файл src/shapes/Rectangle.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Prototype
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d178eba083707183efa68030cdc9e861.html">shapes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Rectangle.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Rectangle_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IShape_8h.html">IShape.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="structRectangle.html">    3</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structRectangle.html">Rectangle</a> : <a class="code" href="structIShape.html">IShape</a> {</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  <a class="code" href="structRectangle.html#ab74337363dcb42ccb4b030b0970085f8">Rectangle</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="structRectangle.html#a1d53e627cbe9229fae5cec6c44168104">    5</a></span>&#160;  <a class="code" href="structRectangle.html#a1d53e627cbe9229fae5cec6c44168104">Rectangle</a>(<span class="keyword">const</span> std::string&amp; data) { <a class="code" href="structRectangle.html#abae2226f879c8efc6f9f206b74a8549b">writeData</a>(data); }</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  std::string <a class="code" href="structRectangle.html#a2ce7af95f764f525016019046c14152d">readData</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structRectangle.html#abae2226f879c8efc6f9f206b74a8549b">writeData</a>(<span class="keyword">const</span> std::string &amp;data) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;};</div>
+<div class="ttc" id="structRectangle_html_a2ce7af95f764f525016019046c14152d"><div class="ttname"><a href="structRectangle.html#a2ce7af95f764f525016019046c14152d">Rectangle::readData</a></div><div class="ttdeci">std::string readData() const override</div><div class="ttdef"><b>Definition:</b> Reactangle.cpp:3</div></div>
+<div class="ttc" id="structRectangle_html_abae2226f879c8efc6f9f206b74a8549b"><div class="ttname"><a href="structRectangle.html#abae2226f879c8efc6f9f206b74a8549b">Rectangle::writeData</a></div><div class="ttdeci">void writeData(const std::string &amp;data) override</div><div class="ttdef"><b>Definition:</b> Reactangle.cpp:7</div></div>
+<div class="ttc" id="structRectangle_html_a1d53e627cbe9229fae5cec6c44168104"><div class="ttname"><a href="structRectangle.html#a1d53e627cbe9229fae5cec6c44168104">Rectangle::Rectangle</a></div><div class="ttdeci">Rectangle(const std::string &amp;data)</div><div class="ttdef"><b>Definition:</b> Rectangle.h:5</div></div>
+<div class="ttc" id="structIShape_html"><div class="ttname"><a href="structIShape.html">IShape</a></div><div class="ttdoc">Интерфейс для сериализации и десериализации примитивов </div><div class="ttdef"><b>Definition:</b> IShape.h:6</div></div>
+<div class="ttc" id="structRectangle_html"><div class="ttname"><a href="structRectangle.html">Rectangle</a></div><div class="ttdef"><b>Definition:</b> Rectangle.h:3</div></div>
+<div class="ttc" id="structRectangle_html_ab74337363dcb42ccb4b030b0970085f8"><div class="ttname"><a href="structRectangle.html#ab74337363dcb42ccb4b030b0970085f8">Rectangle::Rectangle</a></div><div class="ttdeci">Rectangle()=default</div></div>
+<div class="ttc" id="IShape_8h_html"><div class="ttname"><a href="IShape_8h.html">IShape.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

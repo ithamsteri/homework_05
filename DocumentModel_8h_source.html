@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Prototype: Исходный файл src/DocumentModel.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Prototype
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">DocumentModel.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="DocumentModel_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IShape_8h.html">shapes/IShape.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IExport_8h.html">storages/IExport.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IImport_8h.html">storages/IImport.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classDocumentModel.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDocumentModel.html">DocumentModel</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keyword">using</span> id_type = <span class="keywordtype">unsigned</span> long;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  std::map&lt;id_type, std::string&gt; shapes_;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  id_type counter_ = 0;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classDocumentModel.html#a2e02d9f86569a7f04372d8771257d8db">   17</a></span>&#160;  id_type <a class="code" href="classDocumentModel.html#a2e02d9f86569a7f04372d8771257d8db">addShape</a>(<span class="keyword">const</span> std::string &amp;serialised_data) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    shapes_[++counter_] = serialised_data;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> counter_;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classDocumentModel.html#a7f477ed3a17b56adfcc3c64de4c2125b">   25</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classDocumentModel.html#a7f477ed3a17b56adfcc3c64de4c2125b">removeShape</a>(id_type <span class="keywordtype">id</span>) { <span class="keywordflow">return</span> (shapes_.erase(<span class="keywordtype">id</span>) &gt; 0); }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classDocumentModel.html#a5ad4330c3312298d67caf0117911b83f">   30</a></span>&#160;  std::string <a class="code" href="classDocumentModel.html#a5ad4330c3312298d67caf0117911b83f">getShape</a>(id_type <span class="keywordtype">id</span>) { <span class="keywordflow">return</span> shapes_[id]; }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classDocumentModel.html#ae0796e867c6e4801cdb12f31ad690dfc">   35</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classDocumentModel.html#ae0796e867c6e4801cdb12f31ad690dfc">load</a>(<a class="code" href="structIImport.html">IImport</a> *importer, <span class="keyword">const</span> std::string &amp;params) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    shapes_.clear();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    counter_ = 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;data : importer-&gt;<a class="code" href="structIImport.html#a13254d70a839304841def469b82bac41">importData</a>(params)) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      shapes_[++counter_] = data;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classDocumentModel.html#a3c92a16b8f310342729810f618bd785d">   47</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classDocumentModel.html#a3c92a16b8f310342729810f618bd785d">save</a>(<a class="code" href="structIExport.html">IExport</a> *exporter, <span class="keyword">const</span> std::string &amp;params) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::vector&lt;std::string&gt; data;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    data.reserve(shapes_.size());</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;shape : shapes_) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      data.push_back(shape.second);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    exporter-&gt;<a class="code" href="structIExport.html#a13e106e5c961b13c2c69cd09f3eca5f5">exportData</a>(data, params);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="ttc" id="structIImport_html"><div class="ttname"><a href="structIImport.html">IImport</a></div><div class="ttdoc">Интерфейс для загрузки данных документа из внешнего хранилища. </div><div class="ttdef"><b>Definition:</b> IImport.h:7</div></div>
+<div class="ttc" id="IExport_8h_html"><div class="ttname"><a href="IExport_8h.html">IExport.h</a></div></div>
+<div class="ttc" id="structIExport_html_a13e106e5c961b13c2c69cd09f3eca5f5"><div class="ttname"><a href="structIExport.html#a13e106e5c961b13c2c69cd09f3eca5f5">IExport::exportData</a></div><div class="ttdeci">virtual void exportData(const std::vector&lt; std::string &gt; &amp;data, const std::string &amp;params)=0</div></div>
+<div class="ttc" id="classDocumentModel_html_a7f477ed3a17b56adfcc3c64de4c2125b"><div class="ttname"><a href="classDocumentModel.html#a7f477ed3a17b56adfcc3c64de4c2125b">DocumentModel::removeShape</a></div><div class="ttdeci">bool removeShape(id_type id)</div><div class="ttdef"><b>Definition:</b> DocumentModel.h:25</div></div>
+<div class="ttc" id="classDocumentModel_html_a2e02d9f86569a7f04372d8771257d8db"><div class="ttname"><a href="classDocumentModel.html#a2e02d9f86569a7f04372d8771257d8db">DocumentModel::addShape</a></div><div class="ttdeci">id_type addShape(const std::string &amp;serialised_data)</div><div class="ttdef"><b>Definition:</b> DocumentModel.h:17</div></div>
+<div class="ttc" id="classDocumentModel_html"><div class="ttname"><a href="classDocumentModel.html">DocumentModel</a></div><div class="ttdef"><b>Definition:</b> DocumentModel.h:7</div></div>
+<div class="ttc" id="structIImport_html_a13254d70a839304841def469b82bac41"><div class="ttname"><a href="structIImport.html#a13254d70a839304841def469b82bac41">IImport::importData</a></div><div class="ttdeci">virtual std::vector&lt; std::string &gt; importData(const std::string &amp;params)=0</div></div>
+<div class="ttc" id="IImport_8h_html"><div class="ttname"><a href="IImport_8h.html">IImport.h</a></div></div>
+<div class="ttc" id="classDocumentModel_html_a5ad4330c3312298d67caf0117911b83f"><div class="ttname"><a href="classDocumentModel.html#a5ad4330c3312298d67caf0117911b83f">DocumentModel::getShape</a></div><div class="ttdeci">std::string getShape(id_type id)</div><div class="ttdef"><b>Definition:</b> DocumentModel.h:30</div></div>
+<div class="ttc" id="classDocumentModel_html_ae0796e867c6e4801cdb12f31ad690dfc"><div class="ttname"><a href="classDocumentModel.html#ae0796e867c6e4801cdb12f31ad690dfc">DocumentModel::load</a></div><div class="ttdeci">void load(IImport *importer, const std::string &amp;params)</div><div class="ttdef"><b>Definition:</b> DocumentModel.h:35</div></div>
+<div class="ttc" id="classDocumentModel_html_a3c92a16b8f310342729810f618bd785d"><div class="ttname"><a href="classDocumentModel.html#a3c92a16b8f310342729810f618bd785d">DocumentModel::save</a></div><div class="ttdeci">void save(IExport *exporter, const std::string &amp;params)</div><div class="ttdef"><b>Definition:</b> DocumentModel.h:47</div></div>
+<div class="ttc" id="IShape_8h_html"><div class="ttname"><a href="IShape_8h.html">IShape.h</a></div></div>
+<div class="ttc" id="structIExport_html"><div class="ttname"><a href="structIExport.html">IExport</a></div><div class="ttdoc">Интерфейс для сохранения данных документа во внешнее хранилище. </div><div class="ttdef"><b>Definition:</b> IExport.h:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>
