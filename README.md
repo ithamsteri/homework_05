@@ -23,7 +23,7 @@
 компилироваться, все заголовки должны пройти стадию компиляции.
 
 Результатом работы должен быть каталог с диаграммам опубликованный на
-[https://ithamsteri.github.io/homework_05/](GitHub-pages).
+[GitHub-pages](https://ithamsteri.github.io/homework_05/).
 
 ## Проверка
 
