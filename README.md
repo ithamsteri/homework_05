@@ -1,6 +1,7 @@
 # Домашнее задание 05
 
 [![Build Status](https://travis-ci.org/ithamsteri/homework_05.svg?branch=master)](https://travis-ci.org/ithamsteri/homework_05)
+[![Build status](https://ci.appveyor.com/api/projects/status/sfq79pr6m29kmqmc?svg=true)](https://ci.appveyor.com/project/ithamsteri/homework-05)
 
 ## Условие задания
 
