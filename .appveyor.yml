@@ -17,7 +17,6 @@ init:
 # scripts to run before build
 before_build:
   - echo "Running cmake... for %APPVEYOR_BUILD_WORKER_IMAGE% %PLATFORM% %CONFIGURATION%" 
-  - cd c:\projects\jsoncpp
   - cmake --version
 
 build_script:
