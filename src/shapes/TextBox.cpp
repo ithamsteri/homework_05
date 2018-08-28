@@ -1,9 +1,9 @@
 #include "TextBox.h"
 
 std::string TextBox::readData() const {
-  return ""; // return serializable data
+    return "TextBox ... data ..."; // return serializable data
 }
 
-void TextBox::writeData(const std::string &data) {
-  // get inforamation from data for current shape
+void TextBox::writeData(const std::string &data){
+    // get inforamation from the string for the shape
 };

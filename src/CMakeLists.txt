@@ -9,7 +9,7 @@ add_executable(prototype
         shapes/Rectangle.h shapes/Reactangle.cpp
         shapes/TextBox.h shapes/TextBox.cpp
         storages/IImport.h storages/IExport.h
-        storages/PNGFormatStorage.h)
+        storages/SVG_Storage.h)
 
 set_target_properties(prototype PROPERTIES
         CXX_STANDARD 14

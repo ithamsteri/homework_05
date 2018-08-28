@@ -5,3 +5,7 @@ html/
 .idea/
 cmake-build-debug/
 cmake-build-release/
+
+# Visual Studio Code 
+.vscode/
+build/

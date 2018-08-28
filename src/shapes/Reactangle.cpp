@@ -1,9 +1,9 @@
 #include "Rectangle.h"
 
 std::string Rectangle::readData() const {
-  return ""; // return serializable data
+    return "Rectangle ... data ..."; // return serializable data
 }
 
-void Rectangle::writeData(const std::string &data) {
-  // get inforamation from data for current shape
+void Rectangle::writeData(const std::string &){
+    // get inforamation from the string for the shape
 };

@@ -9,23 +9,15 @@ configuration:
   - Release
 
 shallow_clone: true
-clone_folder: c:\projects\homework_05
+clone_folder: c:\projects\otus_homework
 
-init:
-  - set BOOST_ROOT = C:\Libraries\boost_1_67_0
-
-# scripts to run before build
 before_build:
   - echo "Running cmake... for %APPVEYOR_BUILD_WORKER_IMAGE% %PLATFORM% %CONFIGURATION%" 
   - cmake --version
 
 build_script:
-  - cmake -H"%APPVEYOR_BUILD_FOLDER%" -Bbuild -G "Visual Studio 15 2017 %PLATFORM%" -DBUILD_TESTING=ON -DBOOST_ROOT="%BOOST_ROOT%"
+  - cmake -H"%APPVEYOR_BUILD_FOLDER%" -Bbuild -G "Visual Studio 15 2017 %PLATFORM%"
   - cmake --build build
-
-#test_script:
-#  - set CTEST_OUTPUT_ON_FAILURE=ON
-#  - cmake --build build --target test
 
 notifications:
 - provider: Email

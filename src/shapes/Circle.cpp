@@ -1,8 +1,9 @@
 #include "Circle.h"
 
 std::string Circle::readData() const {
-  return ""; // return serializable data
+    return "Circle ... data ..."; // return serializable data
 }
-void Circle::writeData(const std::string &data) {
-  // get inforamation from data for current shape
+
+void Circle::writeData(const std::string &){
+    // get inforamation from the string for the shape
 };
