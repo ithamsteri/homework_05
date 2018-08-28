@@ -1,6 +1,6 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$structIShape.html" title="Интерфейс для сериализации и десериализации примитивов " alt="" coords="6,56,69,83"/>
-<area shape="rect" id="node2" href="$structCircle.html" title="Circle" alt="" coords="131,5,187,32"/>
-<area shape="rect" id="node3" href="$structRectangle.html" title="Rectangle" alt="" coords="118,56,199,83"/>
-<area shape="rect" id="node4" href="$structTextBox.html" title="TextBox" alt="" coords="123,107,194,133"/>
+<area shape="rect" id="node1" href="$structIShape.html" title="Interface for serialization and deserialization a vector shape. " alt="" coords="6,56,69,83"/>
+<area shape="rect" id="node2" href="$structCircle.html" title="Circle is a vector shape. " alt="" coords="131,5,187,32"/>
+<area shape="rect" id="node3" href="$structRectangle.html" title="Rectangle is a vector shape. " alt="" coords="118,56,199,83"/>
+<area shape="rect" id="node4" href="$structTextBox.html" title="TextBox is a vector shape. " alt="" coords="123,107,194,133"/>
 </map>

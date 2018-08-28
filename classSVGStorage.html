@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Prototype: Класс SVGFormatStorage</title>
+<title>Prototype: Класс SVGStorage</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,34 +82,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="classSVGFormatStorage-members.html">Полный список членов класса</a>  </div>
+<a href="classSVGStorage-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс SVGFormatStorage</div>  </div>
+<div class="title">Класс SVGStorage</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс для загрузки/сохранения данных из SVG файла.  
- <a href="classSVGFormatStorage.html#details">Подробнее...</a></p>
+<p>Class for using SVG file as external storage for vector shapes.  
+ <a href="classSVGStorage.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="PNGFormatStorage_8h_source.html">PNGFormatStorage.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="SVG__Storage_8h_source.html">SVG_Storage.h</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:SVGFormatStorage:</div>
+Граф наследования:SVGStorage:</div>
 <div class="dyncontent">
-<div class="center"><img src="classSVGFormatStorage__inherit__graph.png" border="0" usemap="#SVGFormatStorage_inherit__map" alt="Inheritance graph"/></div>
-<map name="SVGFormatStorage_inherit__map" id="SVGFormatStorage_inherit__map">
-<area shape="rect" id="node2" href="structIImport.html" title="Интерфейс для загрузки данных документа из внешнего хранилища. " alt="" coords="5,5,67,32"/><area shape="rect" id="node3" href="structIExport.html" title="Интерфейс для сохранения данных документа во внешнее хранилище. " alt="" coords="92,5,156,32"/></map>
+<div class="center"><img src="classSVGStorage__inherit__graph.png" border="0" usemap="#SVGStorage_inherit__map" alt="Inheritance graph"/></div>
+<map name="SVGStorage_inherit__map" id="SVGStorage_inherit__map">
+<area shape="rect" id="node2" href="structIImport.html" title="Interface for loading a document to a external storage. " alt="" coords="5,5,67,32"/><area shape="rect" id="node3" href="structIExport.html" title="Interface for saving a document to a external storage. " alt="" coords="92,5,156,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <div class="dynheader">
-Граф связей класса SVGFormatStorage:</div>
+Граф связей класса SVGStorage:</div>
 <div class="dyncontent">
-<div class="center"><img src="classSVGFormatStorage__coll__graph.png" border="0" usemap="#SVGFormatStorage_coll__map" alt="Collaboration graph"/></div>
-<map name="SVGFormatStorage_coll__map" id="SVGFormatStorage_coll__map">
-<area shape="rect" id="node2" href="structIImport.html" title="Интерфейс для загрузки данных документа из внешнего хранилища. " alt="" coords="5,5,67,32"/><area shape="rect" id="node3" href="structIExport.html" title="Интерфейс для сохранения данных документа во внешнее хранилище. " alt="" coords="92,5,156,32"/></map>
+<div class="center"><img src="classSVGStorage__coll__graph.png" border="0" usemap="#SVGStorage_coll__map" alt="Collaboration graph"/></div>
+<map name="SVGStorage_coll__map" id="SVGStorage_coll__map">
+<area shape="rect" id="node2" href="structIImport.html" title="Interface for loading a document to a external storage. " alt="" coords="5,5,67,32"/><area shape="rect" id="node3" href="structIExport.html" title="Interface for saving a document to a external storage. " alt="" coords="92,5,156,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс для загрузки/сохранения данных из SVG файла. </p>
+<div class="textblock"><p>Class for using SVG file as external storage for vector shapes. </p>
 </div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>src/storages/<a class="el" href="PNGFormatStorage_8h_source.html">PNGFormatStorage.h</a></li>
+<li>src/storages/<a class="el" href="SVG__Storage_8h_source.html">SVG_Storage.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

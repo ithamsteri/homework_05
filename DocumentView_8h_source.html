@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,14 +87,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <div class="title">DocumentView.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="DocumentView_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="classDocumentView.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDocumentView.html">DocumentView</a> {</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classDocumentView.html#afc22145695a3e1e4f5747746afde6f32">    6</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classDocumentView.html#afc22145695a3e1e4f5747746afde6f32">draw</a>() {}</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;};</div>
-<div class="ttc" id="classDocumentView_html"><div class="ttname"><a href="classDocumentView.html">DocumentView</a></div><div class="ttdef"><b>Definition:</b> DocumentView.h:3</div></div>
-<div class="ttc" id="classDocumentView_html_afc22145695a3e1e4f5747746afde6f32"><div class="ttname"><a href="classDocumentView.html#afc22145695a3e1e4f5747746afde6f32">DocumentView::draw</a></div><div class="ttdeci">void draw()</div><div class="ttdoc">Отрисовка элементов в GUI. </div><div class="ttdef"><b>Definition:</b> DocumentView.h:6</div></div>
+<a href="DocumentView_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PROTOTYPE_DOCUMENTVIEW_HEADER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PROTOTYPE_DOCUMENTVIEW_HEADER</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="DocumentModel_8h.html">DocumentModel.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classDocumentView.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDocumentView.html">DocumentView</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classDocumentView.html#a0c92afd74d14d165a09fe4bc231a0349">   12</a></span>&#160;    <a class="code" href="classDocumentView.html#a0c92afd74d14d165a09fe4bc231a0349">DocumentView</a>(<span class="keyword">const</span> <a class="code" href="classDocumentModel.html">DocumentModel</a> &amp;model) : model_{model} {}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classDocumentView.html#afc22145695a3e1e4f5747746afde6f32">   15</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDocumentView.html#afc22145695a3e1e4f5747746afde6f32">draw</a>() {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">auto</span> iters = model_.<a class="code" href="classDocumentModel.html#a2cfe1603b18f4524cc44a45a39cbb6a8">getData</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = iters.first; iter != iters.second; ++iter) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <a class="code" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">DocumentModel::id_type</a> id;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            std::string data;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            std::tie(<span class="keywordtype">id</span>, data) = (*iter);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="comment">// draw vector shape</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">const</span> <a class="code" href="classDocumentModel.html">DocumentModel</a> &amp;model_;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif // PROTOTYPE_DOCUMENTVIEW_HEADER</span></div>
+<div class="ttc" id="classDocumentModel_html_a09fa72328d44aa1e1aa092167f0c7754"><div class="ttname"><a href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">DocumentModel::id_type</a></div><div class="ttdeci">unsigned long id_type</div><div class="ttdef"><b>Definition:</b> DocumentModel.h:14</div></div>
+<div class="ttc" id="classDocumentView_html_a0c92afd74d14d165a09fe4bc231a0349"><div class="ttname"><a href="classDocumentView.html#a0c92afd74d14d165a09fe4bc231a0349">DocumentView::DocumentView</a></div><div class="ttdeci">DocumentView(const DocumentModel &amp;model)</div><div class="ttdef"><b>Definition:</b> DocumentView.h:12</div></div>
+<div class="ttc" id="classDocumentModel_html_a2cfe1603b18f4524cc44a45a39cbb6a8"><div class="ttname"><a href="classDocumentModel.html#a2cfe1603b18f4524cc44a45a39cbb6a8">DocumentModel::getData</a></div><div class="ttdeci">auto getData() const </div><div class="ttdef"><b>Definition:</b> DocumentModel.h:42</div></div>
+<div class="ttc" id="DocumentModel_8h_html"><div class="ttname"><a href="DocumentModel_8h.html">DocumentModel.h</a></div></div>
+<div class="ttc" id="classDocumentModel_html"><div class="ttname"><a href="classDocumentModel.html">DocumentModel</a></div><div class="ttdoc">DocumentModel directly manages the data, logic and rules of the application. </div><div class="ttdef"><b>Definition:</b> DocumentModel.h:12</div></div>
+<div class="ttc" id="classDocumentView_html"><div class="ttname"><a href="classDocumentView.html">DocumentView</a></div><div class="ttdoc">DocumentView can be any output representation of information. </div><div class="ttdef"><b>Definition:</b> DocumentView.h:8</div></div>
+<div class="ttc" id="classDocumentView_html_afc22145695a3e1e4f5747746afde6f32"><div class="ttname"><a href="classDocumentView.html#afc22145695a3e1e4f5747746afde6f32">DocumentView::draw</a></div><div class="ttdeci">void draw()</div><div class="ttdoc">Draw elements in GUI. </div><div class="ttdef"><b>Definition:</b> DocumentView.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

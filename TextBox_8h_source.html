@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,20 +87,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <div class="title">TextBox.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="TextBox_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IShape_8h.html">IShape.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="structTextBox.html">    3</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structTextBox.html">TextBox</a> : <a class="code" href="structIShape.html">IShape</a> {</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  <a class="code" href="structTextBox.html#a70ced8b176edf235b65a8b75f3a5328a">TextBox</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="structTextBox.html#a75f89e57f6ab19c197e08093e7981f6f">    5</a></span>&#160;  <a class="code" href="structTextBox.html#a75f89e57f6ab19c197e08093e7981f6f">TextBox</a>(<span class="keyword">const</span> std::string&amp; data) { <a class="code" href="structTextBox.html#a698e379fcd657e01640cf894baa3ece6">writeData</a>(data); }</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  std::string <a class="code" href="structTextBox.html#a118507089df944b091d9534708d2e6d8">readData</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structTextBox.html#a698e379fcd657e01640cf894baa3ece6">writeData</a>(<span class="keyword">const</span> std::string &amp;data) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;};</div>
-<div class="ttc" id="structTextBox_html"><div class="ttname"><a href="structTextBox.html">TextBox</a></div><div class="ttdef"><b>Definition:</b> TextBox.h:3</div></div>
+<a href="TextBox_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PROTOTYPE_SHAPES_TEXTBOX_HEADER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PROTOTYPE_SHAPES_TEXTBOX_HEADER</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="IShape_8h.html">IShape.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="structTextBox.html">    6</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structTextBox.html">TextBox</a> : <a class="code" href="structIShape.html">IShape</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="structTextBox.html#a70ced8b176edf235b65a8b75f3a5328a">TextBox</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structTextBox.html#a75f89e57f6ab19c197e08093e7981f6f">    8</a></span>&#160;    <a class="code" href="structTextBox.html#a75f89e57f6ab19c197e08093e7981f6f">TextBox</a>(<span class="keyword">const</span> std::string &amp;data) { <a class="code" href="structTextBox.html#a698e379fcd657e01640cf894baa3ece6">writeData</a>(data); }</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    std::string <a class="code" href="structTextBox.html#a118507089df944b091d9534708d2e6d8">readData</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structTextBox.html#a698e379fcd657e01640cf894baa3ece6">writeData</a>(<span class="keyword">const</span> std::string &amp;data) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif // PROTOTYPE_SHAPES_TEXTBOX_HEADER</span></div>
+<div class="ttc" id="structTextBox_html"><div class="ttname"><a href="structTextBox.html">TextBox</a></div><div class="ttdoc">TextBox is a vector shape. </div><div class="ttdef"><b>Definition:</b> TextBox.h:6</div></div>
 <div class="ttc" id="structTextBox_html_a118507089df944b091d9534708d2e6d8"><div class="ttname"><a href="structTextBox.html#a118507089df944b091d9534708d2e6d8">TextBox::readData</a></div><div class="ttdeci">std::string readData() const override</div><div class="ttdef"><b>Definition:</b> TextBox.cpp:3</div></div>
-<div class="ttc" id="structIShape_html"><div class="ttname"><a href="structIShape.html">IShape</a></div><div class="ttdoc">Интерфейс для сериализации и десериализации примитивов </div><div class="ttdef"><b>Definition:</b> IShape.h:6</div></div>
+<div class="ttc" id="structIShape_html"><div class="ttname"><a href="structIShape.html">IShape</a></div><div class="ttdoc">Interface for serialization and deserialization a vector shape. </div><div class="ttdef"><b>Definition:</b> IShape.h:7</div></div>
 <div class="ttc" id="structTextBox_html_a698e379fcd657e01640cf894baa3ece6"><div class="ttname"><a href="structTextBox.html#a698e379fcd657e01640cf894baa3ece6">TextBox::writeData</a></div><div class="ttdeci">void writeData(const std::string &amp;data) override</div><div class="ttdef"><b>Definition:</b> TextBox.cpp:7</div></div>
-<div class="ttc" id="structTextBox_html_a75f89e57f6ab19c197e08093e7981f6f"><div class="ttname"><a href="structTextBox.html#a75f89e57f6ab19c197e08093e7981f6f">TextBox::TextBox</a></div><div class="ttdeci">TextBox(const std::string &amp;data)</div><div class="ttdef"><b>Definition:</b> TextBox.h:5</div></div>
+<div class="ttc" id="structTextBox_html_a75f89e57f6ab19c197e08093e7981f6f"><div class="ttname"><a href="structTextBox.html#a75f89e57f6ab19c197e08093e7981f6f">TextBox::TextBox</a></div><div class="ttdeci">TextBox(const std::string &amp;data)</div><div class="ttdef"><b>Definition:</b> TextBox.h:8</div></div>
 <div class="ttc" id="structTextBox_html_a70ced8b176edf235b65a8b75f3a5328a"><div class="ttname"><a href="structTextBox.html#a70ced8b176edf235b65a8b75f3a5328a">TextBox::TextBox</a></div><div class="ttdeci">TextBox()=default</div></div>
 <div class="ttc" id="IShape_8h_html"><div class="ttname"><a href="IShape_8h.html">IShape.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

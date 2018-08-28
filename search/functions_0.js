@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['addshape',['addShape',['../classDocumentController.html#a5e690a6368fabb890dc545b647ebda59',1,'DocumentController::addShape()'],['../classDocumentModel.html#a2e02d9f86569a7f04372d8771257d8db',1,'DocumentModel::addShape()']]]
+  ['addshape',['addShape',['../classDocumentController.html#a496f65055f0f6b10d8252959748ce56a',1,'DocumentController::addShape()'],['../classDocumentModel.html#add3a7e08b7a72e5d029400a2a882e149',1,'DocumentModel::addShape()']]]
 ];

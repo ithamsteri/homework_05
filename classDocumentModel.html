@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,6 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="classDocumentModel-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
@@ -89,23 +90,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="classDocumentModel.html" title="DocumentModel directly manages the data, logic and rules of the application. ">DocumentModel</a> directly manages the data, logic and rules of the application.  
+ <a href="classDocumentModel.html#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="DocumentModel_8h_source.html">DocumentModel.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a09fa72328d44aa1e1aa092167f0c7754"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">id_type</a> = unsigned long</td></tr>
+<tr class="separator:a09fa72328d44aa1e1aa092167f0c7754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a2e02d9f86569a7f04372d8771257d8db"><td class="memItemLeft" align="right" valign="top">id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentModel.html#a2e02d9f86569a7f04372d8771257d8db">addShape</a> (const std::string &amp;serialised_data)</td></tr>
-<tr class="separator:a2e02d9f86569a7f04372d8771257d8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f477ed3a17b56adfcc3c64de4c2125b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentModel.html#a7f477ed3a17b56adfcc3c64de4c2125b">removeShape</a> (id_type id)</td></tr>
+<tr class="memitem:add3a7e08b7a72e5d029400a2a882e149"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentModel.html#add3a7e08b7a72e5d029400a2a882e149">addShape</a> (const std::string &amp;serialized_data)</td></tr>
+<tr class="separator:add3a7e08b7a72e5d029400a2a882e149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f477ed3a17b56adfcc3c64de4c2125b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentModel.html#a7f477ed3a17b56adfcc3c64de4c2125b">removeShape</a> (<a class="el" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">id_type</a> id)</td></tr>
 <tr class="separator:a7f477ed3a17b56adfcc3c64de4c2125b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ad4330c3312298d67caf0117911b83f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentModel.html#a5ad4330c3312298d67caf0117911b83f">getShape</a> (id_type id)</td></tr>
-<tr class="separator:a5ad4330c3312298d67caf0117911b83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff9ce796bb022fba35ff780907bfa31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentModel.html#a9ff9ce796bb022fba35ff780907bfa31">clear</a> ()</td></tr>
+<tr class="memdesc:a9ff9ce796bb022fba35ff780907bfa31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all vector shapes from the document.  <a href="#a9ff9ce796bb022fba35ff780907bfa31">Подробнее...</a><br/></td></tr>
+<tr class="separator:a9ff9ce796bb022fba35ff780907bfa31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54bd055bf6fd2d65dae00b99a2cb4d9c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentModel.html#a54bd055bf6fd2d65dae00b99a2cb4d9c">getShape</a> (<a class="el" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">id_type</a> id) const </td></tr>
+<tr class="separator:a54bd055bf6fd2d65dae00b99a2cb4d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cfe1603b18f4524cc44a45a39cbb6a8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentModel.html#a2cfe1603b18f4524cc44a45a39cbb6a8">getData</a> () const </td></tr>
+<tr class="separator:a2cfe1603b18f4524cc44a45a39cbb6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0796e867c6e4801cdb12f31ad690dfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentModel.html#ae0796e867c6e4801cdb12f31ad690dfc">load</a> (<a class="el" href="structIImport.html">IImport</a> *importer, const std::string &amp;params)</td></tr>
 <tr class="separator:ae0796e867c6e4801cdb12f31ad690dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c92a16b8f310342729810f618bd785d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentModel.html#a3c92a16b8f310342729810f618bd785d">save</a> (<a class="el" href="structIExport.html">IExport</a> *exporter, const std::string &amp;params)</td></tr>
-<tr class="separator:a3c92a16b8f310342729810f618bd785d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98011d8322286d36ca4ba056fdbc8d4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentModel.html#a98011d8322286d36ca4ba056fdbc8d4e">save</a> (<a class="el" href="structIExport.html">IExport</a> *exporter, const std::string &amp;params) const </td></tr>
+<tr class="separator:a98011d8322286d36ca4ba056fdbc8d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p><a class="el" href="classDocumentModel.html" title="DocumentModel directly manages the data, logic and rules of the application. ">DocumentModel</a> directly manages the data, logic and rules of the application. </p>
+</div><h2 class="groupheader">Определения типов</h2>
+<a class="anchor" id="a09fa72328d44aa1e1aa092167f0c7754"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">DocumentModel::id_type</a> =  unsigned long</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a2e02d9f86569a7f04372d8771257d8db"></a>
+<a class="anchor" id="add3a7e08b7a72e5d029400a2a882e149"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -113,10 +142,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">id_type DocumentModel::addShape </td>
+          <td class="memname"><a class="el" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">id_type</a> DocumentModel::addShape </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>serialised_data</em></td><td>)</td>
+          <td class="paramname"><em>serialized_data</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -126,18 +155,68 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Добавление сериализованного примитива в документ. </p>
+<p>Add a vector shape as serialized data. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">serialised_data</td><td>сериализоанные данные примитива </td></tr>
+    <tr><td class="paramname">serialized_data</td><td>string with serialized data of a vector shape </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd>идентификатор примитива в документе </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>identifier of the vector shape in document </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a5ad4330c3312298d67caf0117911b83f"></a>
+<a class="anchor" id="a9ff9ce796bb022fba35ff780907bfa31"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DocumentModel::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delete all vector shapes from the document. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2cfe1603b18f4524cc44a45a39cbb6a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto DocumentModel::getData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pair of iterators for all vector shapes in document. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>std::pair with constant iterators of start and end the data </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a54bd055bf6fd2d65dae00b99a2cb4d9c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -147,9 +226,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
         <tr>
           <td class="memname">std::string DocumentModel::getShape </td>
           <td>(</td>
-          <td class="paramtype">id_type&#160;</td>
+          <td class="paramtype"><a class="el" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">id_type</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -158,14 +237,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Получение сериализованных данных примитива. </p>
+<p>Get serialized data of vector shape by identifier. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>индетификатор примитива в документе </td></tr>
+    <tr><td class="paramname">id</td><td>identifier of shape in document </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd>строка с сериализованными данными примитива </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>string with serialized data of the shape </dd></dl>
 
 </div>
 </div>
@@ -200,11 +279,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Загрузка документа из внешнего хранилища. </p>
+<p>Load a document from external storage. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">importer</td><td>указатель на объект, импортирующий документ </td></tr>
-    <tr><td class="paramname">params</td><td>строка с параметрами для импортирующего объекта </td></tr>
+    <tr><td class="paramname">importer</td><td>pointer on <a class="el" href="structIImport.html" title="Interface for loading a document to a external storage. ">IImport</a> object for import a document </td></tr>
+    <tr><td class="paramname">params</td><td>string with parameters for the <a class="el" href="structIImport.html" title="Interface for loading a document to a external storage. ">IImport</a> object </td></tr>
   </table>
   </dd>
 </dl>
@@ -221,7 +300,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
         <tr>
           <td class="memname">bool DocumentModel::removeShape </td>
           <td>(</td>
-          <td class="paramtype">id_type&#160;</td>
+          <td class="paramtype"><a class="el" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">id_type</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -232,18 +311,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Удаление примитива из документа. </p>
+<p>Remove a vector shape from document. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>индентификатор примитива в документе </td></tr>
+    <tr><td class="paramname">id</td><td>identifier of shape in document </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> если примитив удалён, иначе <code>false</code> </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> if successful, otherwise <code>false</code> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a3c92a16b8f310342729810f618bd785d"></a>
+<a class="anchor" id="a98011d8322286d36ca4ba056fdbc8d4e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -265,7 +344,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -274,11 +353,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Сохранение документа во внешнего хранилища. </p>
+<p>Save a document to external storage. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">exporter</td><td>указатель на объект, экспортирующий документ </td></tr>
-    <tr><td class="paramname">params</td><td>строка с параметрами для экспортирующего объекта </td></tr>
+    <tr><td class="paramname">exporter</td><td>pointer on <a class="el" href="structIExport.html" title="Interface for saving a document to a external storage. ">IExport</a> object for export a document </td></tr>
+    <tr><td class="paramname">params</td><td>string with parameters for the <a class="el" href="structIExport.html" title="Interface for saving a document to a external storage. ">IExport</a> object </td></tr>
   </table>
   </dd>
 </dl>

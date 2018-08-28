@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,20 +89,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="structCircle.html" title="Circle is a vector shape. ">Circle</a> is a vector shape.  
+ <a href="structCircle.html#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Circle_8h_source.html">Circle.h</a>&gt;</code></p>
 <div class="dynheader">
 Граф наследования:Circle:</div>
 <div class="dyncontent">
 <div class="center"><img src="structCircle__inherit__graph.png" border="0" usemap="#Circle_inherit__map" alt="Inheritance graph"/></div>
 <map name="Circle_inherit__map" id="Circle_inherit__map">
-<area shape="rect" id="node2" href="structIShape.html" title="Интерфейс для сериализации и десериализации примитивов " alt="" coords="5,5,67,32"/></map>
+<area shape="rect" id="node2" href="structIShape.html" title="Interface for serialization and deserialization a vector shape. " alt="" coords="5,5,67,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <div class="dynheader">
 Граф связей класса Circle:</div>
 <div class="dyncontent">
 <div class="center"><img src="structCircle__coll__graph.png" border="0" usemap="#Circle_coll__map" alt="Collaboration graph"/></div>
 <map name="Circle_coll__map" id="Circle_coll__map">
-<area shape="rect" id="node2" href="structIShape.html" title="Интерфейс для сериализации и десериализации примитивов " alt="" coords="5,5,67,32"/></map>
+<area shape="rect" id="node2" href="structIShape.html" title="Interface for serialization and deserialization a vector shape. " alt="" coords="5,5,67,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -113,10 +116,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <tr class="separator:acd88d2eb653f2c6ef0a9f89fe5538fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8f825a7b7959626f14fcb64a02ba689"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCircle.html#ab8f825a7b7959626f14fcb64a02ba689">readData</a> () const override</td></tr>
 <tr class="separator:ab8f825a7b7959626f14fcb64a02ba689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eaaab4544f82d77a30747a6f60fbea5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCircle.html#a8eaaab4544f82d77a30747a6f60fbea5">writeData</a> (const std::string &amp;data) override</td></tr>
-<tr class="separator:a8eaaab4544f82d77a30747a6f60fbea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b0a3f1c4599fbe1eeda22490a8e19e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCircle.html#a26b0a3f1c4599fbe1eeda22490a8e19e">writeData</a> (const std::string &amp;) override</td></tr>
+<tr class="separator:a26b0a3f1c4599fbe1eeda22490a8e19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p><a class="el" href="structCircle.html" title="Circle is a vector shape. ">Circle</a> is a vector shape. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a class="anchor" id="a6609904d9bc761d37b017d3bb17c533c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -185,12 +190,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Get serialization data of the vector shape. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>std::string with serialization data </dd></dl>
 
 <p>Замещает <a class="el" href="structIShape.html#a5a6a3d9d380f1697c1371e8605a5d9fb">IShape</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8eaaab4544f82d77a30747a6f60fbea5"></a>
+<a class="anchor" id="a26b0a3f1c4599fbe1eeda22490a8e19e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -201,7 +208,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
           <td class="memname">void Circle::writeData </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -211,6 +218,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Set serialization data to internal state of the vector shape. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">std::string</td><td>with serialization data </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Замещает <a class="el" href="structIShape.html#ab6afd056ad730ffec5d6cf84398f43f8">IShape</a>.</p>
 

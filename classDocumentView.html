@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,14 +89,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="classDocumentView.html" title="DocumentView can be any output representation of information. ">DocumentView</a> can be any output representation of information.  
+ <a href="classDocumentView.html#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="DocumentView_8h_source.html">DocumentView.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
+<tr class="memitem:a0c92afd74d14d165a09fe4bc231a0349"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentView.html#a0c92afd74d14d165a09fe4bc231a0349">DocumentView</a> (const <a class="el" href="classDocumentModel.html">DocumentModel</a> &amp;model)</td></tr>
+<tr class="separator:a0c92afd74d14d165a09fe4bc231a0349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc22145695a3e1e4f5747746afde6f32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentView.html#afc22145695a3e1e4f5747746afde6f32">draw</a> ()</td></tr>
-<tr class="memdesc:afc22145695a3e1e4f5747746afde6f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовка элементов в GUI.  <a href="#afc22145695a3e1e4f5747746afde6f32">Подробнее...</a><br/></td></tr>
+<tr class="memdesc:afc22145695a3e1e4f5747746afde6f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw elements in GUI.  <a href="#afc22145695a3e1e4f5747746afde6f32">Подробнее...</a><br/></td></tr>
 <tr class="separator:afc22145695a3e1e4f5747746afde6f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p><a class="el" href="classDocumentView.html" title="DocumentView can be any output representation of information. ">DocumentView</a> can be any output representation of information. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a0c92afd74d14d165a09fe4bc231a0349"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DocumentView::DocumentView </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDocumentModel.html">DocumentModel</a> &amp;&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Contructor requiring the <a class="el" href="classDocumentModel.html" title="DocumentModel directly manages the data, logic and rules of the application. ">DocumentModel</a> as data source. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td><a class="el" href="classDocumentModel.html" title="DocumentModel directly manages the data, logic and rules of the application. ">DocumentModel</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Методы</h2>
 <a class="anchor" id="afc22145695a3e1e4f5747746afde6f32"></a>
 <div class="memitem">
@@ -119,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </table>
 </div><div class="memdoc">
 
-<p>Отрисовка элементов в GUI. </p>
+<p>Draw elements in GUI. </p>
 
 </div>
 </div>

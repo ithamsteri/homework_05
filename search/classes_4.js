@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['svgformatstorage',['SVGFormatStorage',['../classSVGFormatStorage.html',1,'']]]
+  ['svgstorage',['SVGStorage',['../classSVGStorage.html',1,'']]]
 ];

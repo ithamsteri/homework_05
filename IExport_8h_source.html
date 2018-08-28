@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,17 +87,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <div class="title">IExport.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="IExport_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="structIExport.html">    7</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structIExport.html">IExport</a> {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="structIExport.html#a13e106e5c961b13c2c69cd09f3eca5f5">exportData</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;data,</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                          <span class="keyword">const</span> std::string &amp;params) = 0;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;};</div>
+<a href="IExport_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PROTOTYPE_STORAGES_IEXPORT_HEADER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PROTOTYPE_STORAGES_IEXPORT_HEADER</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structIExport.html">    8</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structIExport.html">IExport</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="structIExport.html#a13e106e5c961b13c2c69cd09f3eca5f5">exportData</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;data, <span class="keyword">const</span> std::string &amp;params) = 0;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif // PROTOTYPE_STORAGES_IEXPORT_HEADER</span></div>
 <div class="ttc" id="structIExport_html_a13e106e5c961b13c2c69cd09f3eca5f5"><div class="ttname"><a href="structIExport.html#a13e106e5c961b13c2c69cd09f3eca5f5">IExport::exportData</a></div><div class="ttdeci">virtual void exportData(const std::vector&lt; std::string &gt; &amp;data, const std::string &amp;params)=0</div></div>
-<div class="ttc" id="structIExport_html"><div class="ttname"><a href="structIExport.html">IExport</a></div><div class="ttdoc">Интерфейс для сохранения данных документа во внешнее хранилище. </div><div class="ttdef"><b>Definition:</b> IExport.h:7</div></div>
+<div class="ttc" id="structIExport_html"><div class="ttname"><a href="structIExport.html">IExport</a></div><div class="ttdoc">Interface for saving a document to a external storage. </div><div class="ttdef"><b>Definition:</b> IExport.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

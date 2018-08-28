@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,23 +90,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div><table border="0" cellspacing="10" cellpadding="0">
 <tr><td><img src="inherit_graph_0.png" border="0" alt="" usemap="#DocumentController"/>
 <map name="DocumentController" id="DocumentController">
-<area shape="rect" id="node1" href="classDocumentController.html" title="Контроллер документа, который взаимодействует с пользователем. " alt="" coords="5,5,144,32"/></map>
+<area shape="rect" id="node1" href="classDocumentController.html" title="DocumentController accepts input and converts it to commands for the model or view. " alt="" coords="5,5,144,32"/></map>
 </td></tr>
 <tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#DocumentModel"/>
 <map name="DocumentModel" id="DocumentModel">
-<area shape="rect" id="node1" href="classDocumentModel.html" title="DocumentModel" alt="" coords="5,5,123,32"/></map>
+<area shape="rect" id="node1" href="classDocumentModel.html" title="DocumentModel directly manages the data, logic and rules of the application. " alt="" coords="5,5,123,32"/></map>
 </td></tr>
 <tr><td><img src="inherit_graph_2.png" border="0" alt="" usemap="#DocumentView"/>
 <map name="DocumentView" id="DocumentView">
-<area shape="rect" id="node1" href="classDocumentView.html" title="DocumentView" alt="" coords="6,5,117,32"/></map>
+<area shape="rect" id="node1" href="classDocumentView.html" title="DocumentView can be any output representation of information. " alt="" coords="6,5,117,32"/></map>
 </td></tr>
 <tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#IImport"/>
 <map name="IImport" id="IImport">
-<area shape="rect" id="node1" href="structIExport.html" title="Интерфейс для сохранения данных документа во внешнее хранилище. " alt="" coords="5,5,69,32"/><area shape="rect" id="node2" href="classSVGFormatStorage.html" title="Класс для загрузки/сохранения данных из SVG файла. " alt="" coords="117,31,253,57"/><area shape="rect" id="node3" href="structIImport.html" title="Интерфейс для загрузки данных документа из внешнего хранилища. " alt="" coords="6,56,69,83"/></map>
+<area shape="rect" id="node1" href="structIExport.html" title="Interface for saving a document to a external storage. " alt="" coords="5,5,69,32"/><area shape="rect" id="node2" href="classSVGStorage.html" title="Class for using SVG file as external storage for vector shapes. " alt="" coords="118,31,213,57"/><area shape="rect" id="node3" href="structIImport.html" title="Interface for loading a document to a external storage. " alt="" coords="6,56,69,83"/></map>
 </td></tr>
 <tr><td><img src="inherit_graph_4.png" border="0" alt="" usemap="#IShape"/>
 <map name="IShape" id="IShape">
-<area shape="rect" id="node1" href="structIShape.html" title="Интерфейс для сериализации и десериализации примитивов " alt="" coords="6,56,69,83"/><area shape="rect" id="node2" href="structCircle.html" title="Circle" alt="" coords="131,5,187,32"/><area shape="rect" id="node3" href="structRectangle.html" title="Rectangle" alt="" coords="118,56,199,83"/><area shape="rect" id="node4" href="structTextBox.html" title="TextBox" alt="" coords="123,107,194,133"/></map>
+<area shape="rect" id="node1" href="structIShape.html" title="Interface for serialization and deserialization a vector shape. " alt="" coords="6,56,69,83"/><area shape="rect" id="node2" href="structCircle.html" title="Circle is a vector shape. " alt="" coords="131,5,187,32"/><area shape="rect" id="node3" href="structRectangle.html" title="Rectangle is a vector shape. " alt="" coords="118,56,199,83"/><area shape="rect" id="node4" href="structTextBox.html" title="TextBox is a vector shape. " alt="" coords="123,107,194,133"/></map>
 </td></tr>
 </table>
 </div><!-- contents -->

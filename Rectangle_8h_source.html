@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,20 +87,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <div class="title">Rectangle.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Rectangle_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IShape_8h.html">IShape.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="structRectangle.html">    3</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structRectangle.html">Rectangle</a> : <a class="code" href="structIShape.html">IShape</a> {</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  <a class="code" href="structRectangle.html#ab74337363dcb42ccb4b030b0970085f8">Rectangle</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="structRectangle.html#a1d53e627cbe9229fae5cec6c44168104">    5</a></span>&#160;  <a class="code" href="structRectangle.html#a1d53e627cbe9229fae5cec6c44168104">Rectangle</a>(<span class="keyword">const</span> std::string&amp; data) { <a class="code" href="structRectangle.html#abae2226f879c8efc6f9f206b74a8549b">writeData</a>(data); }</div>
+<a href="Rectangle_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PROTOTYPE_SHAPES_RECTANGLE_HEADER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PROTOTYPE_SHAPES_RECTANGLE_HEADER</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IShape_8h.html">IShape.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  std::string <a class="code" href="structRectangle.html#a2ce7af95f764f525016019046c14152d">readData</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structRectangle.html#abae2226f879c8efc6f9f206b74a8549b">writeData</a>(<span class="keyword">const</span> std::string &amp;data) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;};</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structRectangle.html">    8</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structRectangle.html">Rectangle</a> : <a class="code" href="structIShape.html">IShape</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="structRectangle.html#ab74337363dcb42ccb4b030b0970085f8">Rectangle</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structRectangle.html#a1d53e627cbe9229fae5cec6c44168104">   10</a></span>&#160;    <a class="code" href="structRectangle.html#a1d53e627cbe9229fae5cec6c44168104">Rectangle</a>(<span class="keyword">const</span> std::string &amp;data) { <a class="code" href="structRectangle.html#a664e3591e5d2e5703a43c5427d5090c3">writeData</a>(data); }</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    std::string <a class="code" href="structRectangle.html#a2ce7af95f764f525016019046c14152d">readData</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structRectangle.html#a664e3591e5d2e5703a43c5427d5090c3">writeData</a>(<span class="keyword">const</span> std::string &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif // PROTOTYPE_SHAPES_RECTANGLE_HEADER</span></div>
+<div class="ttc" id="structRectangle_html_a664e3591e5d2e5703a43c5427d5090c3"><div class="ttname"><a href="structRectangle.html#a664e3591e5d2e5703a43c5427d5090c3">Rectangle::writeData</a></div><div class="ttdeci">void writeData(const std::string &amp;) override</div><div class="ttdef"><b>Definition:</b> Reactangle.cpp:7</div></div>
 <div class="ttc" id="structRectangle_html_a2ce7af95f764f525016019046c14152d"><div class="ttname"><a href="structRectangle.html#a2ce7af95f764f525016019046c14152d">Rectangle::readData</a></div><div class="ttdeci">std::string readData() const override</div><div class="ttdef"><b>Definition:</b> Reactangle.cpp:3</div></div>
-<div class="ttc" id="structRectangle_html_abae2226f879c8efc6f9f206b74a8549b"><div class="ttname"><a href="structRectangle.html#abae2226f879c8efc6f9f206b74a8549b">Rectangle::writeData</a></div><div class="ttdeci">void writeData(const std::string &amp;data) override</div><div class="ttdef"><b>Definition:</b> Reactangle.cpp:7</div></div>
-<div class="ttc" id="structRectangle_html_a1d53e627cbe9229fae5cec6c44168104"><div class="ttname"><a href="structRectangle.html#a1d53e627cbe9229fae5cec6c44168104">Rectangle::Rectangle</a></div><div class="ttdeci">Rectangle(const std::string &amp;data)</div><div class="ttdef"><b>Definition:</b> Rectangle.h:5</div></div>
-<div class="ttc" id="structIShape_html"><div class="ttname"><a href="structIShape.html">IShape</a></div><div class="ttdoc">Интерфейс для сериализации и десериализации примитивов </div><div class="ttdef"><b>Definition:</b> IShape.h:6</div></div>
-<div class="ttc" id="structRectangle_html"><div class="ttname"><a href="structRectangle.html">Rectangle</a></div><div class="ttdef"><b>Definition:</b> Rectangle.h:3</div></div>
+<div class="ttc" id="structRectangle_html_a1d53e627cbe9229fae5cec6c44168104"><div class="ttname"><a href="structRectangle.html#a1d53e627cbe9229fae5cec6c44168104">Rectangle::Rectangle</a></div><div class="ttdeci">Rectangle(const std::string &amp;data)</div><div class="ttdef"><b>Definition:</b> Rectangle.h:10</div></div>
+<div class="ttc" id="structIShape_html"><div class="ttname"><a href="structIShape.html">IShape</a></div><div class="ttdoc">Interface for serialization and deserialization a vector shape. </div><div class="ttdef"><b>Definition:</b> IShape.h:7</div></div>
+<div class="ttc" id="structRectangle_html"><div class="ttname"><a href="structRectangle.html">Rectangle</a></div><div class="ttdoc">Rectangle is a vector shape. </div><div class="ttdef"><b>Definition:</b> Rectangle.h:8</div></div>
 <div class="ttc" id="structRectangle_html_ab74337363dcb42ccb4b030b0970085f8"><div class="ttname"><a href="structRectangle.html#ab74337363dcb42ccb4b030b0970085f8">Rectangle::Rectangle</a></div><div class="ttdeci">Rectangle()=default</div></div>
 <div class="ttc" id="IShape_8h_html"><div class="ttname"><a href="IShape_8h.html">IShape.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,19 +89,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div><!--header-->
 <div class="contents">
 
-<p>Контроллер документа, который взаимодействует с пользователем.  
+<p><a class="el" href="classDocumentController.html" title="DocumentController accepts input and converts it to commands for the model or view. ">DocumentController</a> accepts input and converts it to commands for the model or view.  
  <a href="classDocumentController.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="DocumentController_8h_source.html">DocumentController.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:ad75488b44f022e54357f444268c061ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html#ad75488b44f022e54357f444268c061ac">DocumentController</a> (<a class="el" href="classDocumentModel.html">DocumentModel</a> *model, <a class="el" href="classDocumentView.html">DocumentView</a> *view)</td></tr>
-<tr class="separator:ad75488b44f022e54357f444268c061ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e690a6368fabb890dc545b647ebda59"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html#a5e690a6368fabb890dc545b647ebda59">addShape</a> (<a class="el" href="structIShape.html">IShape</a> *shape)</td></tr>
-<tr class="separator:a5e690a6368fabb890dc545b647ebda59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7b598ea11fec855113fe789bd74752f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html#ac7b598ea11fec855113fe789bd74752f">DocumentController</a> (<a class="el" href="classDocumentModel.html">DocumentModel</a> &amp;model, <a class="el" href="classDocumentView.html">DocumentView</a> &amp;view)</td></tr>
+<tr class="separator:ac7b598ea11fec855113fe789bd74752f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496f65055f0f6b10d8252959748ce56a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">DocumentModel::id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html#a496f65055f0f6b10d8252959748ce56a">addShape</a> (<a class="el" href="structIShape.html">IShape</a> *shape)</td></tr>
+<tr class="separator:a496f65055f0f6b10d8252959748ce56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40ce55b539f2def7995d86964b075b43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html#a40ce55b539f2def7995d86964b075b43">removeShape</a> (unsigned long id)</td></tr>
 <tr class="separator:a40ce55b539f2def7995d86964b075b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8c30d939b6956d6f44cca214c76cbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html#aab8c30d939b6956d6f44cca214c76cbd">clear</a> ()</td></tr>
+<tr class="memdesc:aab8c30d939b6956d6f44cca214c76cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all vector shapes from the document.  <a href="#aab8c30d939b6956d6f44cca214c76cbd">Подробнее...</a><br/></td></tr>
+<tr class="separator:aab8c30d939b6956d6f44cca214c76cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c9f738444120c94e53cdb725269e66e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html#a6c9f738444120c94e53cdb725269e66e">getShape</a> (unsigned long id)</td></tr>
 <tr class="separator:a6c9f738444120c94e53cdb725269e66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a075d31cc71f3480c5b928e9e1d84d057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html#a075d31cc71f3480c5b928e9e1d84d057">load</a> (<a class="el" href="structIImport.html">IImport</a> *importer, const std::string &amp;params)</td></tr>
@@ -110,9 +113,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <tr class="separator:a6fd69b3067b009823edfecec215e83b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Контроллер документа, который взаимодействует с пользователем. </p>
+<div class="textblock"><p><a class="el" href="classDocumentController.html" title="DocumentController accepts input and converts it to commands for the model or view. ">DocumentController</a> accepts input and converts it to commands for the model or view. </p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
-<a class="anchor" id="ad75488b44f022e54357f444268c061ac"></a>
+<a class="anchor" id="ac7b598ea11fec855113fe789bd74752f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -122,13 +125,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
         <tr>
           <td class="memname">DocumentController::DocumentController </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classDocumentModel.html">DocumentModel</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classDocumentModel.html">DocumentModel</a> &amp;&#160;</td>
           <td class="paramname"><em>model</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classDocumentView.html">DocumentView</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classDocumentView.html">DocumentView</a> &amp;&#160;</td>
           <td class="paramname"><em>view</em>&#160;</td>
         </tr>
         <tr>
@@ -143,11 +146,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Contructor requiring the <a class="el" href="classDocumentModel.html" title="DocumentModel directly manages the data, logic and rules of the application. ">DocumentModel</a> and <a class="el" href="classDocumentView.html" title="DocumentView can be any output representation of information. ">DocumentView</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td><a class="el" href="classDocumentModel.html" title="DocumentModel directly manages the data, logic and rules of the application. ">DocumentModel</a> </td></tr>
+    <tr><td class="paramname">view</td><td><a class="el" href="classDocumentView.html" title="DocumentView can be any output representation of information. ">DocumentView</a> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a5e690a6368fabb890dc545b647ebda59"></a>
+<a class="anchor" id="a496f65055f0f6b10d8252959748ce56a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -155,7 +166,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long DocumentController::addShape </td>
+          <td class="memname"><a class="el" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">DocumentModel::id_type</a> DocumentController::addShape </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structIShape.html">IShape</a> *&#160;</td>
           <td class="paramname"><em>shape</em></td><td>)</td>
@@ -168,14 +179,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Добавление примитива в документ и перерисовка примитивов. </p>
+<p>Add a vector shape in the document with redraw. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">shape</td><td>указатель на примитив </td></tr>
+    <tr><td class="paramname">shape</td><td>pointer on the vector shape </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd>индентификатор примитива в документе </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>identifier of the vector shape in document </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aab8c30d939b6956d6f44cca214c76cbd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DocumentController::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delete all vector shapes from the document. </p>
 
 </div>
 </div>
@@ -200,14 +236,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Получение сериализованных данных примитива. </p>
+<p>Get serialized data of vector shape by identifier. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>индетификатор примитива в документе </td></tr>
+    <tr><td class="paramname">id</td><td>identifier of shape in document </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd>строка с сериализованными данными примитива </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>string with serialized data of the shape </dd></dl>
 
 </div>
 </div>
@@ -242,11 +278,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Загрузка документа из внешнего хранилища. </p>
+<p>Load a document from external storage. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">importer</td><td>указатель на объект, импортирующий документ </td></tr>
-    <tr><td class="paramname">params</td><td>строка с параметрами для импортирующего объекта </td></tr>
+    <tr><td class="paramname">importer</td><td>pointer on <a class="el" href="structIImport.html" title="Interface for loading a document to a external storage. ">IImport</a> object for import a document </td></tr>
+    <tr><td class="paramname">params</td><td>string with parameters for the <a class="el" href="structIImport.html" title="Interface for loading a document to a external storage. ">IImport</a> object </td></tr>
   </table>
   </dd>
 </dl>
@@ -274,14 +310,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Удаление примитива из документа и перерисовка примитивов. </p>
+<p>Delete a vector shape in the document with redraw. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>индетификатор примитива в документе </td></tr>
+    <tr><td class="paramname">id</td><td>identifier of the vector shape in the document </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> если примитив удалён, иначе <code>false</code> </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> if successful, otherwise <code>false</code> </dd></dl>
 
 </div>
 </div>
@@ -316,11 +352,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Сохранение документа во внешнего хранилища. </p>
+<p>Save a document to external storage. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">exporter</td><td>указатель на объект, экспортирующий документ </td></tr>
-    <tr><td class="paramname">params</td><td>строка с параметрами для экспортирующего объекта </td></tr>
+    <tr><td class="paramname">exporter</td><td>pointer on <a class="el" href="structIExport.html" title="Interface for saving a document to a external storage. ">IExport</a> object for export a document </td></tr>
+    <tr><td class="paramname">params</td><td>string with parameters for the <a class="el" href="structIExport.html" title="Interface for saving a document to a external storage. ">IExport</a> object </td></tr>
   </table>
   </dd>
 </dl>

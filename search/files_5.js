@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['reactangle_2ecpp',['Reactangle.cpp',['../Reactangle_8cpp.html',1,'']]],
-  ['rectangle_2eh',['Rectangle.h',['../Rectangle_8h.html',1,'']]]
+  ['svg_5fstorage_2eh',['SVG_Storage.h',['../SVG__Storage_8h.html',1,'']]]
 ];

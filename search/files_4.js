@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pngformatstorage_2eh',['PNGFormatStorage.h',['../PNGFormatStorage_8h.html',1,'']]]
+  ['reactangle_2ecpp',['Reactangle.cpp',['../Reactangle_8cpp.html',1,'']]],
+  ['rectangle_2eh',['Rectangle.h',['../Rectangle_8h.html',1,'']]]
 ];

@@ -1,5 +1,5 @@
 <map id="IShape" name="IShape">
-<area shape="rect" id="node2" href="$structCircle.html" title="Circle" alt="" coords="5,80,60,107"/>
-<area shape="rect" id="node3" href="$structRectangle.html" title="Rectangle" alt="" coords="86,80,167,107"/>
-<area shape="rect" id="node4" href="$structTextBox.html" title="TextBox" alt="" coords="191,80,261,107"/>
+<area shape="rect" id="node2" href="$structCircle.html" title="Circle is a vector shape. " alt="" coords="5,80,60,107"/>
+<area shape="rect" id="node3" href="$structRectangle.html" title="Rectangle is a vector shape. " alt="" coords="86,80,167,107"/>
+<area shape="rect" id="node4" href="$structTextBox.html" title="TextBox is a vector shape. " alt="" coords="191,80,261,107"/>
 </map>
