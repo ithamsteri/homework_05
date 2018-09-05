@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,7 +84,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Классы</a>  </div>
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
   <div class="headertitle">
 <div class="title">Файл DocumentController.h</div>  </div>
 </div><!--header-->
@@ -95,12 +96,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <code>#include &quot;<a class="el" href="IExport_8h_source.html">storages/IExport.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="IImport_8h_source.html">storages/IImport.h</a>&quot;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
+<code>#include &quot;<a class="el" href="Circle_8h_source.html">shapes/Circle.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="Rectangle_8h_source.html">shapes/Rectangle.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="TextBox_8h_source.html">shapes/TextBox.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Граф включаемых заголовочных файлов для DocumentController.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="DocumentController_8h__incl.png" border="0" usemap="#src_2DocumentController_8h" alt=""/></div>
 <map name="src_2DocumentController_8h" id="src_2DocumentController_8h">
-<area shape="rect" id="node2" href="DocumentModel_8h.html" title="DocumentModel.h" alt="" coords="162,155,290,181"/><area shape="rect" id="node3" href="IShape_8h.html" title="shapes/IShape.h" alt="" coords="22,229,142,256"/><area shape="rect" id="node5" href="IExport_8h.html" title="storages/IExport.h" alt="" coords="288,229,416,256"/><area shape="rect" id="node7" href="IImport_8h.html" title="storages/IImport.h" alt="" coords="492,229,620,256"/><area shape="rect" id="node9" href="DocumentView_8h.html" title="DocumentView.h" alt="" coords="260,80,383,107"/></map>
+<area shape="rect" id="node2" href="DocumentModel_8h.html" title="DocumentModel.h" alt="" coords="430,155,558,181"/><area shape="rect" id="node3" href="IShape_8h.html" title="shapes/IShape.h" alt="" coords="204,229,324,256"/><area shape="rect" id="node5" href="IExport_8h.html" title="storages/IExport.h" alt="" coords="470,229,599,256"/><area shape="rect" id="node7" href="IImport_8h.html" title="storages/IImport.h" alt="" coords="675,229,803,256"/><area shape="rect" id="node9" href="DocumentView_8h.html" title="DocumentView.h" alt="" coords="480,80,603,107"/><area shape="rect" id="node11" href="Circle_8h.html" title="shapes/Circle.h" alt="" coords="28,155,140,181"/><area shape="rect" id="node12" href="Rectangle_8h.html" title="shapes/Rectangle.h" alt="" coords="166,155,304,181"/><area shape="rect" id="node13" href="TextBox_8h.html" title="shapes/TextBox.h" alt="" coords="227,80,355,107"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 Граф файлов, в которые включается этот файл:</div>
@@ -117,7 +121,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html">DocumentController</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDocumentController.html" title="DocumentController accepts input and converts it to commands for the model or view. ">DocumentController</a> accepts input and converts it to commands for the model or view.  <a href="classDocumentController.html#details">Подробнее...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a55b506070847a13554f8b879c1bfb37c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DocumentController_8h.html#a55b506070847a13554f8b879c1bfb37c">Shape</a> { <a class="el" href="DocumentController_8h.html#a55b506070847a13554f8b879c1bfb37ca30954d90085f6eaaf5817917fc5fecb3">Shape::Circle</a>, 
+<a class="el" href="DocumentController_8h.html#a55b506070847a13554f8b879c1bfb37cace9291906a4c3b042650b70d7f3b152e">Shape::Rectangle</a>, 
+<a class="el" href="DocumentController_8h.html#a55b506070847a13554f8b879c1bfb37cafbe16470e116e861d9fdf08f036ea22f">Shape::TextBox</a>
+ }</td></tr>
+<tr class="memdesc:a55b506070847a13554f8b879c1bfb37c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class with all types of shapes for document.  <a href="DocumentController_8h.html#a55b506070847a13554f8b879c1bfb37c">Подробнее...</a><br/></td></tr>
+<tr class="separator:a55b506070847a13554f8b879c1bfb37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Перечисления</h2>
+<a class="anchor" id="a55b506070847a13554f8b879c1bfb37c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="DocumentController_8h.html#a55b506070847a13554f8b879c1bfb37c">Shape</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enum class with all types of shapes for document. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a55b506070847a13554f8b879c1bfb37ca30954d90085f6eaaf5817917fc5fecb3"></a>Circle</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a55b506070847a13554f8b879c1bfb37cace9291906a4c3b042650b70d7f3b152e"></a>Rectangle</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a55b506070847a13554f8b879c1bfb37cafbe16470e116e861d9fdf08f036ea22f"></a>TextBox</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -98,8 +98,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 Открытые члены</h2></td></tr>
 <tr class="memitem:ac7b598ea11fec855113fe789bd74752f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html#ac7b598ea11fec855113fe789bd74752f">DocumentController</a> (<a class="el" href="classDocumentModel.html">DocumentModel</a> &amp;model, <a class="el" href="classDocumentView.html">DocumentView</a> &amp;view)</td></tr>
 <tr class="separator:ac7b598ea11fec855113fe789bd74752f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a496f65055f0f6b10d8252959748ce56a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">DocumentModel::id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html#a496f65055f0f6b10d8252959748ce56a">addShape</a> (<a class="el" href="structIShape.html">IShape</a> *shape)</td></tr>
-<tr class="separator:a496f65055f0f6b10d8252959748ce56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae35933f408edf1c83509ac40902255e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">DocumentModel::id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html#ae35933f408edf1c83509ac40902255e6">addShape</a> (<a class="el" href="DocumentController_8h.html#a55b506070847a13554f8b879c1bfb37c">Shape</a> shape, const std::string &amp;param)</td></tr>
+<tr class="separator:ae35933f408edf1c83509ac40902255e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40ce55b539f2def7995d86964b075b43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html#a40ce55b539f2def7995d86964b075b43">removeShape</a> (unsigned long id)</td></tr>
 <tr class="separator:a40ce55b539f2def7995d86964b075b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab8c30d939b6956d6f44cca214c76cbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDocumentController.html#aab8c30d939b6956d6f44cca214c76cbd">clear</a> ()</td></tr>
@@ -158,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a496f65055f0f6b10d8252959748ce56a"></a>
+<a class="anchor" id="ae35933f408edf1c83509ac40902255e6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -168,9 +168,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
         <tr>
           <td class="memname"><a class="el" href="classDocumentModel.html#a09fa72328d44aa1e1aa092167f0c7754">DocumentModel::id_type</a> DocumentController::addShape </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structIShape.html">IShape</a> *&#160;</td>
-          <td class="paramname"><em>shape</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="DocumentController_8h.html#a55b506070847a13554f8b879c1bfb37c">Shape</a>&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -182,7 +192,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <p>Add a vector shape in the document with redraw. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">shape</td><td>pointer on the vector shape </td></tr>
+    <tr><td class="paramname">shape</td><td>a shape for adding to the document </td></tr>
+    <tr><td class="paramname">param</td><td>parameters for the shape </td></tr>
   </table>
   </dd>
 </dl>

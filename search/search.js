@@ -11,7 +11,9 @@ var indexSectionsWithContent =
   1: "cdirst",
   2: "cdimrst",
   3: "acdegilmrstw",
-  4: "i"
+  4: "i",
+  5: "s",
+  6: "crt"
 };
 
 var indexSectionNames =
@@ -20,7 +22,9 @@ var indexSectionNames =
   1: "classes",
   2: "files",
   3: "functions",
-  4: "typedefs"
+  4: "typedefs",
+  5: "enums",
+  6: "enumvalues"
 };
 
 function convertToId(search)
