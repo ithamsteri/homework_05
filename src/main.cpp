@@ -1,8 +1,6 @@
 #include "DocumentController.h"
 #include "DocumentModel.h"
 #include "DocumentView.h"
-#include "shapes/Circle.h"
-#include "shapes/Rectangle.h"
 #include "storages/SVG_Storage.h"
 #include <iostream>
 #include <string>
@@ -15,26 +13,20 @@ int main(int, char *[]) {
     DocumentView view(model);
     DocumentController controller(model, view);
 
-    // ***************************
-    // *   Shapes and storages   *
-    // ***************************
-    Circle circle;
-    Rectangle rectangle;
-    SVGStorage storage;
-
     // ****************************
     // * Work with empty document *
     // ****************************
-    controller.addShape(&circle);
-    controller.addShape(&rectangle);
+    controller.addShape(Shape::Circle, "x=100;y=323;radius=3");
+    controller.addShape(Shape::Rectangle, "x=10;y=30;width=100;height=390");
     controller.clear();
 
     // *****************************************
     // * Load from storage and modify document *
     // *****************************************
+    SVGStorage storage;
     controller.load(&storage, "filename: funny.svg");
-    auto rect_id = controller.addShape(&rectangle);
-    auto circle_id = controller.addShape(&circle);
+    auto rect_id = controller.addShape(Shape::Rectangle, "x=100;y=10;width=140;height=30");
+    auto circle_id = controller.addShape(Shape::Circle, "x=10;y=5;radius=12");
     controller.removeShape(rect_id);
 
     std::clog << "Serialized data of Circle: " << controller.getShape(circle_id) << '\n';

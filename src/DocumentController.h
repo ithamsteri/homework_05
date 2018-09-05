@@ -8,6 +8,17 @@
 #include "storages/IImport.h"
 #include <string>
 
+#include "shapes/Circle.h"
+#include "shapes/Rectangle.h"
+#include "shapes/TextBox.h"
+
+/// Enum class with all types of shapes for document
+enum class Shape {
+    Circle,
+    Rectangle,
+    TextBox,
+};
+
 /// DocumentController accepts input and converts it to commands for the model or view.
 class DocumentController {
   public:
@@ -17,10 +28,24 @@ class DocumentController {
     DocumentController(DocumentModel &model, DocumentView &view) : model_{model}, view_{view} {}
 
     /// Add a vector shape in the document with redraw.
-    /// @param shape pointer on the vector shape
+    /// @param shape a shape for adding to the document
+    /// @param param parameters for the shape
     /// @return identifier of the vector shape in document
-    DocumentModel::id_type addShape(IShape *shape) {
-        auto id = model_.addShape(shape->readData());
+    DocumentModel::id_type addShape(Shape shape, const std::string &param) {
+        DocumentModel::id_type id;
+
+        switch (shape) {
+        case Shape::Circle:
+            id = model_.addShape(Circle(param).readData());
+            break;
+        case Shape::Rectangle:
+            id = model_.addShape(Rectangle(param).readData());
+            break;
+        case Shape::TextBox:
+            id = model_.addShape(TextBox(param).readData());
+            break;
+        }
+
         view_.draw();
         return id;
     }
